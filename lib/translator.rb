@@ -10,9 +10,15 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emot)
+  if !load_library(path)['get_emoticon'][emot]
+    return "Sorry, that emoticon was not found"
+  end
   load_library(path)['get_emoticon'][emot]
 end
 
-def get_english_meaning
-
+def get_english_meaning(path, emot)
+  if !load_library(path)['get_emoticon'][emot]
+    return "Sorry, that emoticon was not found"
+  end
+  load_library(path)['get_emoticon'][emot]
 end
