@@ -10,7 +10,8 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emot)
-  
+  load_library(path)[get_emoticon].reduce do |k, v|
+    
 end
 
 def get_english_meaning
