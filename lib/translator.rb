@@ -5,7 +5,7 @@ def load_library(path)
   emot = YAML.load_file(path)
   emot.each do |k, v|
     new['get_meaning'][v[1]] = k
-    new['get_emoticon'][v]
+    new['get_emoticon'][v[0]] = v[1]
   emot
 end
 pp load_library('./lib/emoticons.yml')
