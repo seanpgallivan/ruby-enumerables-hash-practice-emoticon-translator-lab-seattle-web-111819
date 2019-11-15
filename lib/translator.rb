@@ -1,5 +1,5 @@
 require "yaml"
-fruits = YAML.load_file('fruits.yml')# require modules here
+fruits = YAML.load_file('emoticons.yml')
 
 def load_library
   # code goes here
