@@ -1,10 +1,10 @@
 require "yaml"
 
 def load_library(path)
-  new = {}
+  new = {'get_meaning' => {}, 'get_emoticon' => {}}
   emot = YAML.load_file(path)
   emot.each do |k, v|
-    new
+    new['get_meaning'][]
   emot
 end
 pp load_library('./lib/emoticons.yml')
