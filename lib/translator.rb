@@ -2,6 +2,7 @@ require "yaml"
 
 def load_library(path)
   emot = YAML.load_file(path)
+  emot.each
   emot
 end
 pp load_library('./lib/emoticons.yml')
